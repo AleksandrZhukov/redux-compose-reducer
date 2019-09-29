@@ -1,6 +1,5 @@
 import {
   namespacedActionType,
-  createTypesObject,
   createCapturedError,
 } from './utils'
 
@@ -17,7 +16,7 @@ const createTypes = (namespace, types = []) => {
   )
     throw createError(ARGUMENT_ERROR)
 
-  const result = createTypesObject()
+  const result = {};
   types.forEach(type => {
     result[type] = namespacedActionType(namespace, type)
   })

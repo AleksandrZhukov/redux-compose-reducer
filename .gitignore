@@ -1,7 +1,6 @@
 node_modules
 coverage
 es
-lib
 dist
 *.log
 package-lock.json
